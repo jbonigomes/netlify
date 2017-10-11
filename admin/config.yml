@@ -1,0 +1,5 @@
+backend:
+  name: github
+  repo: jbonigomes/netlify
+  branch: master
+publish_mode: editorial_workflow
