@@ -4,3 +4,13 @@ backend:
   branch: master
 
 media_folder: "images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Post"
+    folder: "_posts"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
